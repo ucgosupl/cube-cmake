@@ -10,16 +10,16 @@ project(audio-cmake)
 set(SRC_DIR src)
 
 set(INCLUDE_DIRS
--I${SRC_DIR}/Inc
--I${SRC_DIR}/Drivers/CMSIS/Device/ST/STM32F4xx/Include
--I${SRC_DIR}/Drivers/STM32F4xx_HAL_Driver/Inc
--I${SRC_DIR}/Drivers/BSP/STM32F4-Discovery
--I${SRC_DIR}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc
--I${SRC_DIR}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc
--I${SRC_DIR}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc
--I${SRC_DIR}/Middlewares/ST/STM32_Audio/Addons/PDM/Inc
--I${SRC_DIR}/Middlewares/Third_Party/FatFs/src
--I${SRC_DIR}/Drivers/CMSIS/Include
+    ${SRC_DIR}/Inc
+    ${SRC_DIR}/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+    ${SRC_DIR}/Drivers/STM32F4xx_HAL_Driver/Inc
+    ${SRC_DIR}/Drivers/BSP/STM32F4-Discovery
+    ${SRC_DIR}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc
+    ${SRC_DIR}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc
+    ${SRC_DIR}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc
+    ${SRC_DIR}/Middlewares/ST/STM32_Audio/Addons/PDM/Inc
+    ${SRC_DIR}/Middlewares/Third_Party/FatFs/src
+    ${SRC_DIR}/Drivers/CMSIS/Include
 )
 
 set(C_SRCS
